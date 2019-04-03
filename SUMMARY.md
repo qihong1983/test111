@@ -10,3 +10,8 @@
   * [删除用户](user/deleteUser.md)
   * [获取编辑用户](user/editUser.md)
   * [设置编辑用户](user/setEditUser.md)
+
+* [游戏列表页面]()
+  * [获取游戏列表](game/getGameList.md)
+  
+ 
