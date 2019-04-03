@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>获取编辑用户 · 编写gitbook电子书教程</title>
+        <title>设置编辑用户 · 编写gitbook电子书教程</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -62,10 +62,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="setEditUser.html" />
     
-    
-    <link rel="prev" href="deleteUser.html" />
+    <link rel="prev" href="editUser.html" />
     
 
     <style>
@@ -178,7 +176,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.4" data-path="editUser.html">
+        <li class="chapter " data-level="2.1.4" data-path="editUser.html">
             
                 <a href="editUser.html">
             
@@ -191,12 +189,44 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.5" data-path="setEditUser.html">
+        <li class="chapter active" data-level="2.1.5" data-path="setEditUser.html">
             
                 <a href="setEditUser.html">
             
                     
                     设置编辑用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    游戏列表页面
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../game/getGameList.md">
+            
+                <span>
+            
+                    
+                    获取游戏列表
             
                 </a>
             
@@ -239,7 +269,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >获取编辑用户</a>
+        <a href=".." >设置编辑用户</a>
     </h1>
 </div>
 
@@ -255,13 +285,13 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x7528;&#x6237;&#x63A5;&#x53E3;">&#x7528;&#x6237;&#x63A5;&#x53E3;</h1>
-<h2 id="&#x83B7;&#x53D6;&#x7F16;&#x8F91;&#x7528;&#x6237;">&#x83B7;&#x53D6;&#x7F16;&#x8F91;&#x7528;&#x6237;</h2>
+<h2 id="&#x8BBE;&#x7F6E;&#x7F16;&#x8F91;&#x7528;&#x6237;">&#x8BBE;&#x7F6E;&#x7F16;&#x8F91;&#x7528;&#x6237;</h2>
 <h3 id="&#x63A5;&#x53E3;&#x5730;&#x5740;">&#x63A5;&#x53E3;&#x5730;&#x5740;</h3>
 <blockquote>
 <p>get</p>
 </blockquote>
 <ul>
-<li><a href="https://api.xxx.com/user/edit" target="_blank">https://api.xxx.com/user/edit</a></li>
+<li><a href="https://api.xxx.com/user/setEditUser" target="_blank">https://api.xxx.com/user/setEditUser</a></li>
 </ul>
 <h3 id="header">header</h3>
 <pre><code class="lang-javascript">{
@@ -286,7 +316,8 @@
 </tbody>
 </table>
 <pre><code class="lang-javascript">{
-    <span class="hljs-string">&quot;userid&quot;</span>: <span class="hljs-number">1</span>
+    <span class="hljs-string">&quot;user&quot;</span>: <span class="hljs-string">&quot;&#x5C0F;&#x6D2A;&quot;</span>,
+    <span class="hljs-string">&quot;avatar&quot;</span>: <span class="hljs-string">&quot;https://img.xxx.com/xxx.png&quot;</span>
 }
 </code></pre>
 <h3 id="&#x54CD;&#x5E94;">&#x54CD;&#x5E94;</h3>
@@ -312,9 +343,11 @@
 </tbody>
 </table>
 <h4 id="&#x6210;&#x529F;">&#x6210;&#x529F;</h4>
-<pre><code class="lang-javascript">{
+<pre><code class="lang-javascript">
+{
     <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;&#x6210;&#x529F;&quot;</span>,
+
 }
 </code></pre>
 <h4 id="&#x5931;&#x8D25;">&#x5931;&#x8D25;</h4>
@@ -350,14 +383,10 @@
 
             
                 
-                <a href="deleteUser.html" class="navigation navigation-prev " aria-label="Previous page: 删除用户">
+                <a href="editUser.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 获取编辑用户">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="setEditUser.html" class="navigation navigation-next " aria-label="Next page: 设置编辑用户">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -366,7 +395,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"获取编辑用户","level":"2.1.4","depth":2,"next":{"title":"设置编辑用户","level":"2.1.5","depth":2,"path":"user/setEditUser.md","ref":"user/setEditUser.md","articles":[]},"previous":{"title":"删除用户","level":"2.1.3","depth":2,"path":"user/deleteUser.md","ref":"user/deleteUser.md","articles":[]},"dir":"ltr"},"config":{"plugins":["donate","github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://raw.githubusercontent.com/qihong1983/test111/master/WechatIMG7.jpeg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/qihong1983/test111/master/WechatIMG6.jpeg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"repo":"qihong/gitbook","types":["star"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页","base":"https://github.com/qihong1983/test111/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sphard","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编写gitbook电子书教程","language":"zh-hans","gitbook":"*","description":"gitbook电子书教程"},"file":{"path":"user/editUser.md","mtime":"2019-04-03T21:40:08.195Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-03T21:42:58.274Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"设置编辑用户","level":"2.1.5","depth":2,"next":{"title":"游戏列表页面","level":"2.2","depth":1,"ref":"","articles":[{"title":"获取游戏列表","level":"2.2.1","depth":2,"path":"game/getGameList.md","ref":"game/getGameList.md","articles":[]}]},"previous":{"title":"获取编辑用户","level":"2.1.4","depth":2,"path":"user/editUser.md","ref":"user/editUser.md","articles":[]},"dir":"ltr"},"config":{"plugins":["donate","github-buttons@2.1.0","edit-link"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://raw.githubusercontent.com/qihong1983/test111/master/WechatIMG7.jpeg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://raw.githubusercontent.com/qihong1983/test111/master/WechatIMG6.jpeg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"repo":"qihong/gitbook","types":["star"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"编辑此页","base":"https://github.com/qihong1983/test111/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sphard","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编写gitbook电子书教程","language":"zh-hans","gitbook":"*","description":"gitbook电子书教程"},"file":{"path":"user/setEditUser.md","mtime":"2019-04-03T21:56:13.872Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-03T21:56:39.297Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
