@@ -26,8 +26,8 @@
             "size": "small"
         },
         "edit-link": {
-            "base": "https://github.com/qihong1983122",
-            "label": "Edit This Page"
+            "base": "https://github.com/qihong1983/test111/tree/master",
+            "label": "编辑此页"
         }
     }
 }
